@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{  
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229,23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    background-color: var(--Darkcyan);
+    background-image: url(/images/bg-pattern-top.svg),url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+/* ------container------ */
+.container{
+    width: 326px;
+    height: 375px;
+    margin: 150px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.background{
+    height: 140px;
+    background:url(/images/bg-pattern-card.svg);
+}
+.photo{
+    position: absolute;
+    top:87px;
+    left: 35%;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+img{
+    border-radius: 50%;
+}
+
+/* --------profile------- */
+.profile{
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    text-align: center;
+}
+.name{
+    font-weight: 700;
+    color: var(--Verydarkdesaturatedblue);
+}
+.age{
+    color: var(--Darkgray);
+}
+.city{
+    margin-top: 10px;
+    color: var(--Darkgray);
+    font-size: 14px;
+}
+
+/* -------statistics----- */
+.stats-container{
+    background-color: white;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+}
+.statistics{
+    text-align: center;
+}
+.unity{
+    font-weight: 700;
+    color: var(--Verydarkdesaturatedblue);
+}
+.quantity{
+    font-size: .7em;
+    letter-spacing: 2px;
+    color: var(--Darkgray);
+    margin-top: 5px;
+}
+
+.attribution { font-size: 14px; text-align: center; }
+.attribution a { color:whitesmoke; }
+
+@media only screen and (min-width:1440px){
+    .container{
+        width: 350px;
+    }
+}
